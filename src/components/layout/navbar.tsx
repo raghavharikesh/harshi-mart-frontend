@@ -3,11 +3,13 @@
 import Link from "next/link";
 import { Heart, ShoppingCart, User, Search, Menu } from "lucide-react";
 import { useAppSelector } from "@/hooks/redux";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 export default function Navbar() {
   const cartItems = useAppSelector((state) => state.cart.items);
   const [mobileOpen, setMobileOpen] = useState(false);
+  const [mounted, setMounted] = useState(false);
+  useEffect(() => { setMounted(true); }, []);
 
   const navLinks = [
     { href: "/", label: "Home" },
@@ -78,7 +80,7 @@ export default function Navbar() {
               className="relative w-10 h-10 rounded-xl flex items-center justify-center text-[#475569] hover:text-[#0c1117] hover:bg-[#f1f5f9] transition-all duration-150"
             >
               <ShoppingCart className="w-4.5 h-4.5" strokeWidth={2} />
-              {cartItems.length > 0 && (
+              {mounted && cartItems.length > 0 && (
                 <span
                   className="absolute -top-0.5 -right-0.5 w-5 h-5 rounded-full text-white text-[10px] font-bold flex items-center justify-center"
                   style={{ background: "#0d9166" }}

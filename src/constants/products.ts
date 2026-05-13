@@ -5,39 +5,64 @@ export const products: Product[] = [
     id: 1,
     title: "Wireless Headphones",
     price: 2499,
-    image:
-      "https://images.unsplash.com/photo-1505740420928-5e560c06d30e",
+    image: "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=600&q=80",
     category: "Electronics",
     rating: 4.5,
   },
-
   {
     id: 2,
     title: "Smart Watch",
     price: 3999,
-    image:
-      "https://images.unsplash.com/photo-1523275335684-37898b6baf30",
+    image: "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=600&q=80",
     category: "Accessories",
     rating: 4.7,
   },
-
   {
     id: 3,
     title: "Running Shoes",
     price: 1999,
-    image:
-      "https://images.unsplash.com/photo-1542291026-7eec264c27ff",
+    image: "https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=600&q=80",
     category: "Fashion",
     rating: 4.3,
   },
-
   {
     id: 4,
     title: "Gaming Mouse",
     price: 1499,
-    image:
-      "https://images.unsplash.com/photo-1527814050087-3793815479db",
+    image: "https://images.unsplash.com/photo-1527814050087-3793815479db?w=600&q=80",
     category: "Gaming",
     rating: 4.6,
+  },
+  {
+    id: 5,
+    title: "Bluetooth Speaker",
+    price: 1899,
+    image: "https://images.unsplash.com/photo-1608043152269-423dbba4e7e1?w=600&q=80",
+    category: "Electronics",
+    rating: 4.4,
+  },
+  {
+    id: 6,
+    title: "Leather Wallet",
+    price: 799,
+    image: "https://images.unsplash.com/photo-1627123424574-724758594785?w=600&q=80",
+    category: "Accessories",
+    rating: 4.2,
+  },
+  {
+    id: 7,
+    title: "Casual Sneakers",
+    price: 2299,
+    image: "https://images.unsplash.com/photo-1600269452121-4f2416e55c28?w=600&q=80",
+    category: "Shoes",
+    rating: 4.5,
+  },
+  {
+    id: 8,
+    title: "Mechanical Keyboard",
+    price: 3499,
+    image: "https://images.unsplash.com/photo-1587829741301-dc798b83add3?w=600&q=80",
+    category: "Gaming",
+    rating: 4.8,
   },
 ];

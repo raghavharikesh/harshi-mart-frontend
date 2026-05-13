@@ -10,12 +10,21 @@ export default function HomePage() {
     <>
       <Navbar />
 
-      <main>
-        <HeroSection />
+      <main className="bg-slate-50">
 
-        <CategoriesSection />
+        <div className="pb-24">
 
-        <ProductGrid />
+          <HeroSection />
+
+          <div className="mt-24">
+            <CategoriesSection />
+          </div>
+
+          <div className="mt-24">
+            <ProductGrid />
+          </div>
+
+        </div>
       </main>
 
       <Footer />
